@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <RelativeLayout
+                android:id="@+id/rlCk"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp">
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:button="@null"
+                    android:background="@drawable/ic_like"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"    />
+                <TextView
+                    android:id="@+id/tvCheckbox"
+                    android:layout_below="@+id/checkbox"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="100dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/imgView"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_view" />
+                <TextView
+                    android:id="@+id/tvView"
+                    android:layout_below="@+id/imgView"
+                    android:textSize="10sp"
+                    android:text="32"
+                    android:gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                     />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageButton
+                    android:id="@+id/btComment"
+                    android:src="@drawable/ic_baseline_add_comment_24"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    />
+                <TextView
+                    android:text="@string/binh_luan"
+                    android:layout_below="@+id/btComment"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="10sp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lvDanhSachChap"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rlTop"
+            android:background="@color/background_gray"
+
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</FrameLayout>

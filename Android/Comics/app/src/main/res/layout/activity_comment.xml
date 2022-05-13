@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.CommentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"    >
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:src="@drawable/ic_baseline_chevron_left_24"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/tvTenTruyen1"
+                android:text="@string/no_comment"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:background="@color/gray"
+                />
+            <RelativeLayout
+                android:id="@+id/rlBottom"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+
+                tools:ignore="MissingConstraints">
+                <EditText
+                    android:id="@+id/edtComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:maxLength="50"
+                    android:hint="comment in here!"
+                    android:layout_marginRight="80dp"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btSubmit"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="@string/button_send"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="MissingConstraints"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

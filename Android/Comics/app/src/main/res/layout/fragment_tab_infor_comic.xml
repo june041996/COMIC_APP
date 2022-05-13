@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:background="@color/white"
+               android:layout_margin="2dp"
+               android:id="@+id/imgTruyen"
+               android:layout_centerHorizontal="true"
+               android:layout_width="100dp"
+               android:layout_height="100dp"/>
+
+           <LinearLayout
+               android:id="@+id/ln"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/imgTruyen"
+               android:background="@color/background_gray"
+               android:orientation="vertical"
+               android:padding="12dp">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="12sp"
+                   android:text="@string/the_loai"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold" />
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/rvTheLoai"
+                   android:layout_marginLeft="15dp"
+                   android:background="@color/background_gray"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="12sp"
+                   android:text="@string/tac_gia"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/tvTacGia"
+                   android:layout_width="match_parent"
+                   android:textSize="12sp"
+                   android:layout_height="30dp"
+                   android:paddingLeft="20sp"
+                   android:text="Oda" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="12dp"
+                   android:text="@string/mo_ta"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/tvMoTa"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="12sp"
+                   android:paddingLeft="20sp"
+                   android:text="Truyen duoc viet boi Oda" />
+
+
+           </LinearLayout>
+       </RelativeLayout>
+   </ScrollView>
+</FrameLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/background_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:gravity="center"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold"
+                    android:id="@+id/tvTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/title_personal_information"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imvBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_baseline_chevron_left_24"
+                    tools:ignore="MissingConstraints" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTop">
+                <ImageButton
+                    android:id="@+id/imgbt"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/civUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civUser"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_person"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlImage">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/username"
+                            android:paddingTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:paddingTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:id="@+id/tvUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:paddingTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:text="@string/emailname"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+                        <EditText
+                            android:textSize="@dimen/text_content_12"
+                            android:id="@+id/edtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/sex"
+                            android:paddingTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+                        <RadioGroup
+                            android:id="@+id/rdg"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="50dp">
+                            <RadioButton
+                                android:id="@+id/rbNam"
+                                android:text="@string/male"
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"/>
+                            <RadioButton
+                                android:id="@+id/rbNu"
+                                android:text="@string/female"
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"/>
+                            <RadioButton
+                                android:visibility="invisible"
+                                android:checked="true"
+                                android:text="null"
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"/>
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="@string/birth_day"
+                            android:paddingTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:paddingTop="15dp"
+                            android:text="00/00/0000"
+                            android:id="@+id/tv_Date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:paddingTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:text="@string/phone_number"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+                        <EditText
+                            android:id="@+id/edtPhone"
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:paddingTop="15dp"
+                            android:paddingLeft="5dp"
+                            android:text="@string/address"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+                        <EditText
+                            android:id="@+id/edtAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_tv_gray"
+                        android:text="@string/button_submit"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_title_btn"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

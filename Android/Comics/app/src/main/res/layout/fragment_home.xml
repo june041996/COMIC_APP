@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefresh"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvTop"
+                android:textStyle="bold"
+                android:text="@string/title_bar"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_title"
+                android:background="@color/background_gray"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/tvTop"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rvBanner"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/rvBanner"
+                android:id="@+id/parent_recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                tools:ignore="MissingConstraints" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

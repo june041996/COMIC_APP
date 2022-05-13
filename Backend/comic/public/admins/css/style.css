@@ -1,0 +1,10 @@
+.Image_150{
+	width: 150px;
+	height: auto;
+	object-fit: cover;
+}
+.Image_100{
+	width: 100px;
+	height: auto;
+	object-fit: cover;
+}

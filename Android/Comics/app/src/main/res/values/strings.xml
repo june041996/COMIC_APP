@@ -1,0 +1,93 @@
+<resources>
+
+    <string name="app_name">COMIC</string>
+    <string name="title_home">Home</string>
+    <string name="title_favourites">Favourites</string>
+    <string name="title_search">Search</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_bar">COMIC</string>
+    <string name="title_favourites_fragment">THEO DÕI</string>
+    //url
+    <string name="BASE_URL_UPLOAD">https://192.168.1.7/phpthuan/assets/shared/img/Users/</string>
+    <string name="BASE_URL_IMAGE">https://192.168.1.7/phpthuan/assets/shared/img/truyen/</string>
+    <string name="BASE_URL_ANH">https://192.168.1.7/phpthuan/assets/shared/img/anh/</string>
+
+    <string name="BASE_URL_API">https://192.168.1.7/test/</string>
+
+    <string name="URL_API_IMAGE">http://192.168.1.7:8000</string>
+    //search
+    <string name="title_search_fragment">BẢNG XẾP HẠNG</string>
+
+
+    //profile
+    <string name="personal_information">Đổi thông tin</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="about_us">About us</string>
+    <string name="log_out">Đăng xuất</string>
+
+    //frame1
+    <string name="binh_luan">Bình luận</string>
+    <string name="name_checkbox_false">Hủy theo dõi</string>
+
+    //frame2
+    <string name="the_loai">Thể loại</string>
+    <string name="no_chapter">Đang cập nhập chương truyện</string>
+
+
+    <string name="tac_gia">Tác giả</string>
+    <string name="mo_ta">Mô tả truyện</string>
+
+    //view_comic
+    <string name="loading">ĐANG CẬP NHẬP</string>
+
+    //comment
+    <string name="no_comment">KHÔNG CÓ BÌNH LUẬN</string>
+    <string name="button_send">SEND</string>
+    <string name="image_null">/storage/users/person.png</string>
+
+    //change password
+    <string name="title_change_password">ĐỔI MẬT KHẨU</string>
+    <string name="old_pass">Mật khẩu cũ</string>
+    <string name="new_pass">Mật khẩu mới</string>
+    <string name="confirm">Cập nhập</string>
+
+    //change infor
+    <string name="title_personal_information">THÔNG TIN CÁ NHÂN</string>
+    <string name="username">Tên tài khoản:</string>
+    <string name="emailname">Địa chỉ email</string>
+    <string name="sex">Giới tính</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="birth_day">Ngày sinh</string>
+    <string name="address">Địa chỉ</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="button_submit">Cập nhập</string>
+    <string name="update">Cập nhập thành công</string>
+    <string name="check_date">Năm sinh phải nhỏ hơn 2020</string>
+
+    //swipe
+    <string name="f5">Loading...</string>
+
+
+    //login_register
+    <string name="email">User name</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="new_user_register_now">New User? Register Now</string>
+    <string name="username_incorred">Tên đăng nhập không tồn tại</string>
+    <string name="password_incorred">Mật khẩu không chính xác</string>
+    <string name="signup_success">Đăng ký thành công</string>
+    <string name="username_taken">Tên tài khoản đã tồn tại</string>
+
+    //change pass
+    <string name="change_pass_ok">Đổi mật khẩu thành công</string>
+
+
+    <string name="failed">Lỗi kết nối</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
