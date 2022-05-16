@@ -33,8 +33,8 @@
 
 
 # Web
-<img src="https://user-images.githubusercontent.com/25265572/168561820-28fea4b0-8572-41c0-a544-2fb3d372a974.PNG" alt="..." width="250" />
-<img src="https://user-images.githubusercontent.com/25265572/168561753-b66eb1ee-fb6f-4cd3-91b0-c55f04337ae7.PNG" alt="..." width="250" />
-<img src="https://user-images.githubusercontent.com/25265572/168561920-c7099bfc-3f0d-4682-9b98-3a40c0bb15f7.PNG" alt="..." width="250" />
-<img src="https://https://user-images.githubusercontent.com/25265572/168561928-2a714755-319c-457e-8984-3c6e9b7ea27c.PNG" alt="..." width="250" />
+<img src="https://user-images.githubusercontent.com/25265572/168561820-28fea4b0-8572-41c0-a544-2fb3d372a974.PNG" alt="..."  />
+<img src="https://user-images.githubusercontent.com/25265572/168561753-b66eb1ee-fb6f-4cd3-91b0-c55f04337ae7.PNG" alt="..."  />
+<img src="https://user-images.githubusercontent.com/25265572/168561920-c7099bfc-3f0d-4682-9b98-3a40c0bb15f7.PNG" alt="..." />
+<img src="https://user-images.githubusercontent.com/25265572/168561928-2a714755-319c-457e-8984-3c6e9b7ea27c.PNG" alt="..."  />
 
