@@ -1,5 +1,15 @@
-# COMIC_APP
-# Android
+# COMIC APP
+## External Libraries used
+- Volley 1.2
+- Picasso 2.7
+- PhotoView 2.0
+- CircleImageView 1.2.1
+- Retrofit 2.2
+- Okhttp 2.5
+- Gson 2.8
+
+## Screen shots
+#### Android
 <p align="center">
 
 <img src="https://user-images.githubusercontent.com/25265572/168560486-a52831a9-105b-4944-8c6f-04c4b2457ef2.png" width="300" hspace="10"/>
@@ -32,7 +42,7 @@
 
 
 
-# Web
+#### Website admin
 <img src="https://user-images.githubusercontent.com/25265572/168561820-28fea4b0-8572-41c0-a544-2fb3d372a974.PNG" alt="..."  />
 <img src="https://user-images.githubusercontent.com/25265572/168561753-b66eb1ee-fb6f-4cd3-91b0-c55f04337ae7.PNG" alt="..."  />
 <img src="https://user-images.githubusercontent.com/25265572/168561920-c7099bfc-3f0d-4682-9b98-3a40c0bb15f7.PNG" alt="..." />
